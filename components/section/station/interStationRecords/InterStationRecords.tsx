@@ -33,7 +33,7 @@ function InterStationRecords() {
                       modal?.showModal();
                     }}
                   >
-                    <Eye className="bg-transparent text-primary text-[#563007]" />
+                    <Eye className="bg-transparent  text-[#563007]" />
                   </button>
                   <dialog id="my_modal_1" className="modal">
                     <div className="modal-box min-w-[500px] bg-white">

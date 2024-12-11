@@ -46,7 +46,7 @@ function RepairReplacement() {
                     modal?.showModal();
                   }}
                 >
-                  <Eye className="bg-transparent text-primary" />
+                  <Eye className="bg-transparent text-[#563007]" />
                 </button>
                 <dialog id="my_modal_1" className="modal ">
                   <div className="modal-box min-w-[700px] min-h-[500px] flex flex-col bg-white">
@@ -185,7 +185,7 @@ function RepairReplacement() {
                     modal?.showModal();
                   }}
                 >
-                  <Eye className="bg-transparent text-primary" />
+                  <Eye className="bg-transparent text-[#563007]" />
                 </button>
                 <dialog id="my_modal_1" className="modal ">
                   <div className="modal-box">
@@ -289,7 +289,7 @@ function RepairReplacement() {
                     modal?.showModal();
                   }}
                 >
-                  <Eye className="bg-transparent text-primary" />
+                  <Eye className="bg-transparent text-[#563007]" />
                 </button>
                 <dialog id="my_modal_1" className="modal ">
                   <div className="modal-box">
