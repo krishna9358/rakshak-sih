@@ -3,12 +3,12 @@ import { Eye } from "lucide-react";
 function ResourceAllocation() {
   return (
     <div>
-      <h1 className="text-xl font-bold"> Resource Allocation</h1>
+      <h1 className="text-xl font-bold text-[#563007]"> Resource Allocation</h1>
       <div className="overflow-x-auto mt-4">
         <table className="table">
           {/* head */}
           <thead>
-            <tr className="text-sm border ">
+            <tr className="text-sm border text-[#563007]">
               <th></th>
               <th>Station Details</th>
               <th>Product Details</th>
@@ -19,7 +19,7 @@ function ResourceAllocation() {
               <th>Confirmation</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-[#563007]">
             {/* row 1 */}
             <tr className="text-xs ">
               <th>1</th>
@@ -44,8 +44,8 @@ function ResourceAllocation() {
                 >
                   <Eye className="bg-transparent text-primary" />
                 </button>
-                <dialog id="my_modal_1" className="modal">
-                  <div className="modal-box min-w-[700px] min-h-[500px]">
+                <dialog id="my_modal_1" className="modal ">
+                  <div className="modal-box min-w-[700px] min-h-[500px] bg-white">
                       <table className="w-full">
                         <tr className="border text-sm">
                         <th></th>

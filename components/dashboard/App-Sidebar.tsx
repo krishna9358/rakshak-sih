@@ -1,6 +1,6 @@
 // import { useState } from "react";
 "use client"
-import { ChevronRight, Command } from "lucide-react"
+import { BadgeInfoIcon, Command } from "lucide-react"
 
 import {
   Sidebar,
@@ -29,14 +29,14 @@ type User = {
 
 export function AppSidebar({ items, titles, user, onSelect }: { items: Item[], titles: string, user: User, onSelect: (component: string) => void }) {
   return (
-    <Sidebar variant="inset" collapsible="icon" className="bg-[#19191a]">
+    <Sidebar variant="inset" collapsible="icon" className="bg-[#7c634e]">
       {/* SIDEBAR HEADER */}
       <SidebarHeader >
         <SidebarMenu >
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
               <a href="#">
-                <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary ">
+                <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary bg-[#563007] ">
                   <Command className="size-4 text-sidebar-primary-foreground" />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
@@ -57,10 +57,11 @@ export function AppSidebar({ items, titles, user, onSelect }: { items: Item[], t
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href="#" onClick={() => onSelect(item.title)}>
+                    <a href="#" onClick={() => onSelect(item.title)} title="">
                       <item.icon />
                       <span>{item.title}</span>
-                      <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
+                      {/* <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" /> */}
+                      <BadgeInfoIcon className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90 cursor-pointer"  />
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

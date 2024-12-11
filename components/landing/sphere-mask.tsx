@@ -5,11 +5,11 @@ export const SphereMask = ({ reverse = false }: { reverse?: boolean }) => {
     <div
       className={cn(
         // color
-        "[--color:var(--color-one)]",
+        "[--color:#ad7d2c]",
         "pointer-events-none relative  mx-auto h-[50rem] overflow-hidden",
 
         // sphere mask
-        "[mask-image:radial-gradient(ellipse_at_center_center,#000,transparent_50%)]",
+        "[mask-image:radial-gradient(ellipse_at_center_center,#ad7d2c,transparent_50%)]",
 
         // reverse
         reverse ? "my-[-22rem] rotate-180 md:mt-[-30rem]" : "my-[-18.8rem]",

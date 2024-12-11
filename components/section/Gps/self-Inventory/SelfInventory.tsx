@@ -4,7 +4,7 @@ function SelfInventory() {
   return (
     <div>
         <div className="flex justify-between mb-4">
-        <div><h1 className="text-xl font-bold"> Self Inventory</h1></div>
+        <div><h1 className="text-xl font-bold text-[#563007]"> Self Inventory</h1></div>
         <div>
           <label className="input input-bordered flex items-center h-9">
             <input type="text" className="" placeholder="Search" />
@@ -27,13 +27,13 @@ function SelfInventory() {
         <table className="table">
           {/* head */}
           <thead>
-            <tr className="border text-sm">
+            <tr className="border text-sm text-[#563007]">
               <th></th>
               <th>Product Name</th>
               <th>Quantity</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-[#563007]">
             {/* row 1 */}
             <tr>
               <th>1</th>

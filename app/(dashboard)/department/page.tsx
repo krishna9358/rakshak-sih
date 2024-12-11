@@ -3,7 +3,7 @@ import DepartmentMain from "@/components/section/department/DepartmentMain";
 
 export default function Department() {
   return (
-    <main>
+    <main className="bg-white">
       <AuthGuard>
         <DepartmentMain />
       </AuthGuard>

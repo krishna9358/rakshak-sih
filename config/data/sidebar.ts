@@ -27,7 +27,7 @@ export const items = {
   },
   department: [
     {
-      title: "Credentials",
+      title: "Create ID",
       url: "#",
       icon: Key,
     },
@@ -93,7 +93,7 @@ export const items = {
   ],
   gps: [
     {
-      title: "Barcode Code Generate",
+      title: "Add Items",
       url: "#",
       icon: BarcodeIcon,
     },
@@ -108,7 +108,7 @@ export const items = {
       icon: Table2Icon,
     },
     {
-      title: "Resource Allocation",
+      title: "Items Distribution",
       url: "#",
       icon: BaggageClaim,
     },

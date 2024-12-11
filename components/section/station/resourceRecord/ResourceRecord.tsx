@@ -10,16 +10,16 @@ function ResourceRecord() {
       <div>
         <div className="flex justify-between mb-4">
           <div>
-            <h1 className="text-xl font-bold"> Resource Record</h1>
+            <h1 className="text-xl font-bold text-[#563007]"> Resource Record</h1>
           </div>
-          <div>
-            <label className="input input-bordered flex items-center h-9">
+          <div className="">
+            <label className="input input-bordered flex items-center h-9 bg-white input-warning ">
               <input type="text" className="" placeholder="Search" />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
                 fill="currentColor"
-                className="h-4 w-4 opacity-70"
+                className="h-4 w-4 opacity-70 text-[#563007]"
               >
                 <path
                   fillRule="evenodd"
@@ -34,14 +34,14 @@ function ResourceRecord() {
           <table className="table">
             {/* head */}
             <thead>
-              <tr className="border text-sm">
+              <tr className="border text-sm text-[#563007]">
                 <th></th>
                 <th>Product Name</th>
                 <th>Quantity</th>
                 <th>Status</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="text-[#563007]">
               {/* row 1 */}
               <tr>
                 <th>1</th>
@@ -57,12 +57,12 @@ function ResourceRecord() {
                       modal?.showModal();
                     }}
                   >
-                    <Eye className="bg-transparent text-primary" />
+                    <Eye className="bg-transparent text-warning" />
                   </button>
-                  <dialog id="my_modal_1" className="modal">
-                    <div className="modal-box min-w-[900px]">
+                  <dialog id="my_modal_1" className="modal ">
+                    <div className="modal-box min-w-[900px] bg-white">
                       <table className="w-full">
-                        <thead>
+                        <thead className="text-[#563007]">
                           <tr className="border ">
                             <th>Sr.</th>
                             <th>Product Id</th>
@@ -73,10 +73,10 @@ function ResourceRecord() {
                             <th>Last Upgrade</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody className="">
                           <td>1</td>
                           <td>1234</td>
-                          <td>
+                          <td >
                             {" "}
                             <div className="badge badge-success gap-2">
                               <svg
@@ -174,7 +174,7 @@ function ResourceRecord() {
                 <td>50</td>
                 <td>
                   <button
-                    className="btn bg-transparent border-none "
+                    className="btn bg-transparent border-none  "
                     onClick={() => {
                       const modal = document.getElementById(
                         "my_modal_2"
@@ -182,7 +182,7 @@ function ResourceRecord() {
                       modal?.showModal();
                     }}
                   >
-                    <Eye className="bg-transparent text-primary" />
+                    <Eye className="bg-transparent text-warning" />
                   </button>
                   <dialog id="my_modal_2" className="modal">
                     <div className="modal-box min-w-[900px]">
@@ -307,7 +307,7 @@ function ResourceRecord() {
                       modal?.showModal();
                     }}
                   >
-                    <Eye className="bg-transparent text-primary" />
+                    <Eye className="bg-transparent text-primary text-warning" />
                   </button>
                   <dialog id="my_modal_3" className="modal">
                     <div className="modal-box min-w-[900px]">

@@ -24,9 +24,9 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: -50 }} 
             animate={{ opacity: 1, y: 0 }}    
             transition={{ duration: 0.9 }}>
-        <h1 className="bg-clip-text bg-gradient-to-br from-30% from-gray-300  py-6 font-medium text-5xl text-balance text-transparent sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-tighter translate-y-[-1rem] animate-fade-in [--animation-delay:200ms]">
+        <h1 className="bg-clip-text bg-black from-black py-6 font-medium text-5xl text-balance text-transparent sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-tighter translate-y-[-1rem] animate-fade-in [--animation-delay:200ms]">
           Rakshak is the new way
-          <br className="md:block hidden" /> to manage operations.
+          <br className="md:block hidden" /> to manage Operations
         </h1>
         </motion.div>
         <p className="mb-3 text-balance text-gray-400 text-lg md:text-xl tracking-tight translate-y-[-1rem] animate-fade-in [--animation-delay:400ms]">

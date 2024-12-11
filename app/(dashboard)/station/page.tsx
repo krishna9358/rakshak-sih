@@ -3,7 +3,7 @@ import StationMainComponent from "@/components/section/station/StationMainCompon
 
   export default function Station() {
     return (
-      <main>
+      <main className="bg-white">
       <AuthGuard>
      <StationMainComponent/>
      </AuthGuard>

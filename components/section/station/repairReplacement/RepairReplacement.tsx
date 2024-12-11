@@ -4,12 +4,12 @@ import React from "react";
 function RepairReplacement() {
   return (
     <div>
-      <h1 className="text-xl font-bold"> Repair Replacement</h1>
+      <h1 className="text-xl font-bold text-[#563007]"> Repair Replacement</h1>
       <div className="overflow-x-auto">
         <table className="table mt-4">
           {/* head */}
           <thead>
-            <tr className="border text-sm ">
+            <tr className="border text-sm text-[#563007]">
               <th></th>
               <th>Product Category</th>
               <th>Date of Request </th>
@@ -17,7 +17,7 @@ function RepairReplacement() {
               <th>Action</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-[#563007]">
             {/* row 1 */}
             <tr>
               <th>1</th>
@@ -78,8 +78,8 @@ function RepairReplacement() {
           </tbody>
           <tfoot>
             <tr>
-              <td colSpan={5} className="text-right">
-                <Link
+              <td colSpan={5} className="text-right text-[#563007]">
+                <Link className="text-[#563007]"
                   onClick={() => {
                     const modal = document.getElementById(
                       "my_modal_1"
@@ -91,12 +91,12 @@ function RepairReplacement() {
                 </Link>
               </td>
               <dialog id="my_modal_1" className="modal">
-                <div className="modal-box">
+                <div className="modal-box bg-white">
                   <div className="modal-action">
                     <form method="dialog">
                       {/* if there is a button in form, it will close the modal */}
                       
-                      <button className="btn">Submit</button>
+                      <button className="btn bg-[#d2b99f] text-white">Submit</button>
                     </form>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ function RepairReplacement() {
             </tr>
           </tfoot>
         </table>
-        <button className="btn btn-primary btn-md text-white px-8 absolute bottom-6 right-6 m-4 text-[16px]">
+        <button className="btn bg-[#d2b99f] btn-md text-white px-8 absolute bottom-6 right-6 m-4 text-[16px]">
           SUBMIT
         </button>
       </div>

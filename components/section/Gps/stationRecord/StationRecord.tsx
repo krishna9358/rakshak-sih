@@ -6,10 +6,10 @@ function StationRecord() {
   return (
     <div className="mb-20">
       <div className="flex justify-between mb-4">
-        <div><h1 className="text-xl font-bold"> Station Record</h1></div>
-        <div>
+        <div><h1 className="text-xl font-bold text-[#563007]"> Station Record</h1></div>
+        <div className="bg-white">
           <label className="input input-bordered flex items-center h-9">
-            <input type="text" className="" placeholder="Search" />
+            <input type="text" className="input input-white bg-white  " placeholder="Search"  />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -29,14 +29,14 @@ function StationRecord() {
         <table className="table">
           {/* head */}
           <thead>
-            <tr className="border text-sm">
+            <tr className="border text-sm text-[#563007]">
               <th></th>
               <th>Station ID</th>
               <th>Station Name</th>
               <th>View</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-[#563007]">
             {/* row 1 */}
             <tr>
               <th>1</th>
@@ -52,13 +52,13 @@ function StationRecord() {
                     modal?.showModal();
                   }}
                 >
-                  <Eye className="bg-transparent text-primary" />
+                  <Eye className="bg-transparent text-[#563007]" />
                 </button>
-                <dialog id="my_modal_1" className="modal">
-                  <div className="modal-box">
+                <dialog id="my_modal_1" className="modal ">
+                  <div className="modal-box bg-white">
                     <table className="table">
                       {/* head */}
-                      <thead>
+                      <thead className="text-[#563007]">
                         <tr>
                           <th></th>
                           <th>Product Name</th>
@@ -161,7 +161,7 @@ function StationRecord() {
                     modal?.showModal();
                   }}
                 >
-                  <Eye className="bg-transparent text-primary" />
+                  <Eye className="bg-transparent text-[#563007] " />
                 </button>
                 <dialog id="my_modal_1" className="modal">
                   <div className="modal-box">
@@ -192,8 +192,8 @@ function StationRecord() {
                     ) as HTMLDialogElement;
                     modal?.showModal();
                   }}
-                >
-                  <Eye className="bg-transparent text-primary" />
+                    >
+                  <Eye className="bg-transparent text-[#563007]" />
                 </button>
                 <dialog id="my_modal_1" className="modal">
                   <div className="modal-box">

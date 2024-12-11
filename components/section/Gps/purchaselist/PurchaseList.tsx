@@ -5,10 +5,10 @@ function PurchaseList() {
   return (
     <div>
         <div className="flex justify-between mb-4">
-        <div><h1 className="text-xl font-bold"> Purchase List</h1></div>
+        <div><h1 className="text-xl font-bold text-[#563007]"> Purchase List</h1></div>
         <div>
           <label className="input input-bordered flex items-center h-9">
-            <input type="text" className="" placeholder="Search" />
+            <input type="text" className="bg-white" placeholder="Search"  />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -27,14 +27,14 @@ function PurchaseList() {
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
-          <thead>
+          <thead className='bg-[#b38b59] text-white'>
             <tr className="border text-sm">
               <th></th>
               <th>Product Name</th>
               <th>Quantity</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className='text-[#563007]'>
             {/* row 1 */}
             <tr>
               <th>1</th>
@@ -55,7 +55,7 @@ function PurchaseList() {
         </table>
       </div>
       <a href="https://gem.gov.in" target="_blank" rel="noopener noreferrer">
-        <button className="btn btn-primary btn-md text-white px-8 absolute bottom-6 right-6 m-4 text-[16px]">
+        <button className="btn bg-[#b38b59] btn-md text-white px-8 absolute bottom-6 right-6 m-4 text-[16px]">
           <ArrowBigRight size={20} strokeWidth={0.75} /> GEM Portal
         </button>
       </a>

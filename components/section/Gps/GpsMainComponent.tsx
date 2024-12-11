@@ -54,22 +54,25 @@ export default function GpsMainComponent() {
           onSelect={setSelectedComponent}
         />
         {/* TODO: change color of main */}
-        <SidebarInset className="">
+        <SidebarInset className="bg-white">
           <header className="flex h-16 shrink-0 items-center gap-2">
             <div className="flex items-center gap-2 px-4">
-              <SidebarTrigger className="-ml-1" />
+              <SidebarTrigger className="-ml-1 text-[#563007]" />
               <Separator orientation="vertical" className="mr-2 h-4" />
               <Breadcrumb>
                 <BreadcrumbList>
-                  <BreadcrumbItem className="hidden md:block">
+                  <BreadcrumbItem className="hidden md:block text-[#563007]">
                     <BreadcrumbLink href="#">GP Store</BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="hidden md:block" />
                   <BreadcrumbItem>
-                    <BreadcrumbPage>Home</BreadcrumbPage>
+                    <BreadcrumbPage className="text-[#563007]">Home</BreadcrumbPage>
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2 bg-[#563007] rounded-md ml-auto ">
+              <a href="http://localhost:3001/gps" className="text-white">Hindi</a>
             </div>
           </header>
           <div className="gap-4 p-4 pt-0">{renderComponent()}</div>

@@ -8,17 +8,17 @@ function InterStationRecords() {
       <div className="flex">
         <div className="flex-1 border p-2">
           {/* Upper Left Section */}
-          <h2 className="text-lg font-semibold mb-4  ">Nearest Station List</h2>
+          <h2 className="text-lg font-semibold mb-4 text-[#563007] ">Nearest Station List</h2>
           <table className="table">
             {/* head */}
             <thead>
-              <tr className="border text-sm">
+              <tr className="border text-sm text-[#563007]">
                 <th></th>
                 <th>Station Details</th>
                 <th>Product Details</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="text-[#563007]">
               {/* row 1 */}
               <tr>
                 <th>1</th>
@@ -33,13 +33,13 @@ function InterStationRecords() {
                       modal?.showModal();
                     }}
                   >
-                    <Eye className="bg-transparent text-primary" />
+                    <Eye className="bg-transparent text-primary text-[#563007]" />
                   </button>
                   <dialog id="my_modal_1" className="modal">
-                    <div className="modal-box min-w-[500px]">
+                    <div className="modal-box min-w-[500px] bg-white">
                       <table className="w-full">
                         <thead>
-                          <tr className="border ">
+                          <tr className="border text-[#563007]">
                             <th>Sr.</th>
                             <th>Product Name</th>
                             <th>Quantity </th>
@@ -67,20 +67,20 @@ function InterStationRecords() {
           {/* Content for Upper Left Section */}
 
         </div>
-        <div className="flex-1 ml-4 border p-2">
+        <div className="flex-1 ml-4 border  p-2">
           {/* Upper Right Section */}
           <h2 className="text-lg font-semibold mb-4">Form</h2>
           {/* Content for Upper Right Section */}
           <div className="flex space-x-2 mb-4">
         <button 
           onClick={() => setFormType('lent')} 
-          className={`btn ${formType === 'lent' ? 'btn-success' : ''}`}
+          className={`btn ${formType === 'lent' ? 'bg-[#d2b99f] text-white' : 'bg-[#563007] text-white'}`}
         >
           Lent
         </button>
         <button 
           onClick={() => setFormType('borrow')} 
-          className={`btn ${formType === 'borrow' ? 'btn-success' : ''}`}
+          className={`btn ${formType === 'borrow' ? 'bg-[#d2b99f] text-white' : 'bg-[#563007] text-white'}`}
         >
           Borrow
         </button>
@@ -88,11 +88,11 @@ function InterStationRecords() {
       {/* Form Section */}
       {formType === 'lent' ? (
         <form className="flex flex-col space-y-4">
-          <select className="dropdown-content menu bg-base-100 z-[1] shadow">
-            <option>Station Name</option>
+          <select className="dropdown-content menu  z-[1] shadow bg-white text-[#563007] ">
+            <option className="">Station Name</option>
             {/* Add station options here */}
           </select>
-          <select className="dropdown-content menu bg-base-100 z-[1] shadow">
+          <select className="dropdown-content menu z-[1] shadow bg-white text-[#563007]">
             <option>Product Name</option>
             {/* Add product options here */}
           </select>
@@ -100,18 +100,18 @@ function InterStationRecords() {
             placeholder="10"
             type="number"
             min={0}
-            className="input input-bordered input-sm w-20"
+            className="input input-bordered input-sm w-20 bg-white "
           /> 
           <a href="#" className="link"> + Add Item</a>
-          <button type="submit" className="btn">Submit</button>
+          <button type="submit" className="btn bg-[#d2b99f] text-white">Submit</button>
         </form>
       ) : (
-        <form className="flex flex-col space-y-4">
-          <select  className="dropdown-content menu bg-base-100 z-[1] shadow">
-            <option>Station Name</option>
+        <form className="flex flex-col space-y-4 ">
+          <select  className="dropdown-content menu  z-[1] shadow bg-white text-[#563007]">
+            <option className="">Station Name</option>
             {/* Add station options here */}
           </select>
-          <select  className="dropdown-content menu bg-base-100 z-[1] shadow">
+          <select  className="dropdown-content menu z-[1] shadow bg-white text-[#563007]">
             <option>Product Name</option>
             {/* Add product options here */}
           </select>
@@ -119,10 +119,10 @@ function InterStationRecords() {
             placeholder="10"
             type="number"
             min={0}
-            className="input input-bordered input-sm w-20"
+            className="input input-bordered input-sm w-20 bg-white text-[#563007]"
           /> 
-          <a href="#" className="link"> + Add Item</a>
-          <button type="submit" className="btn">Submit</button>
+          <a href="#" className="link text-blue-700"> + Add Item</a>
+          <button type="submit" className="btn bg-[#d2b99f] text-white">Submit</button>
         </form>
       )}
         </div>
@@ -130,7 +130,7 @@ function InterStationRecords() {
       <div className="flex">
         <div className="flex-1 border mt-2 p-2">
           {/* Lower Section */}
-          <h2 className="text-lg font-semibold">History</h2>
+          <h2 className="text-lg font-semibold text-[#563007]">History</h2>
           {/* Content for Lower Section */}
         </div>
       </div>

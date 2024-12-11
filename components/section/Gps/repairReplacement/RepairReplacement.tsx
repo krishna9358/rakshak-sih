@@ -7,12 +7,12 @@ function RepairReplacement() {
 
   return (
     <div>
-      <h1 className="text-xl font-bold"> Repair & Replacement</h1>
+      <h1 className="text-xl font-bold text-[#563007]"> Repair & Replacement</h1>
       <div>
         <table className="table mt-4">
           {/* head */}
           <thead>
-            <tr className="text-sm border ">
+            <tr className="text-sm border text-[#563007] ">
               <th></th>
               <th>Station Details</th>
               <th>Product Details</th>
@@ -23,7 +23,7 @@ function RepairReplacement() {
               <th></th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-[#563007]">
             {/* row 1 */}
             <tr className="text-xs ">
               <th>1</th>
@@ -49,7 +49,7 @@ function RepairReplacement() {
                   <Eye className="bg-transparent text-primary" />
                 </button>
                 <dialog id="my_modal_1" className="modal ">
-                  <div className="modal-box min-w-[700px] min-h-[500px] flex flex-col">
+                  <div className="modal-box min-w-[700px] min-h-[500px] flex flex-col bg-white">
                     <form method="dialog" className="m-2">
                       {/* if there is a button in form, it will close the modal */}
                       <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
@@ -68,13 +68,13 @@ function RepairReplacement() {
                       <td>Keyboard</td>
                       <td>PSJ323</td>
                       <td>
-                        <div className="dropdown dropdown-hover">
-                          <div tabIndex={0} role="button" className="btn m-1">
+                        <div className="dropdown dropdown-hover ">
+                          <div tabIndex={0} role="button" className="btn m-1 bg-[#b38b59] text-white">
                             {selectedItem}
                           </div>
                           <ul
                             tabIndex={0}
-                            className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+                            className="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow bg-[#b38b59] text-white"
                           >
                             <li>
                               <a onClick={() => setSelectedItem("Replace")}>

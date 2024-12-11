@@ -9,9 +9,9 @@ export default function BgParticles(){
         className="absolute inset-0 text-white"
         quantity={50}
         ease={70}
-        color={"#ffffff"}
-        size={0.05}
-        staticity={40}
+        color={"#000"}
+        size={0.1}
+        staticity={60}
         refresh
       />
     </div>

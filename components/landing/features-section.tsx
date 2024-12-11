@@ -64,7 +64,7 @@ export function FeaturesSection() {
 	return (
 		<section className='my-20 py-14'>
 			<div className='flex flex-col items-center gap-2 space-y-4 mx-auto my-14 md:px-8r max-w-[63rem] text-center'>
-				<h1 className='font-bold text-6xl'>Future of Police Hardware Management</h1>
+				<h1 className='font-bold text-6xl text-black'>Future of Police Hardware Management</h1>
 				<span className='text-gray-500 text-xl'>
 					More visibility, greater control, traceable ownership. A
 					next-generation hardware management platform that lets you engage with
@@ -72,7 +72,7 @@ export function FeaturesSection() {
 					before possible. You make the rules.
 				</span>
 			</div>
-			<div className='relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto py-10 max-w-7xl'>
+			<div className='relative z-10  text-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto py-10 max-w-7xl'>
 				{features.map((feature, index) => (
 					<Feature key={feature.title} {...feature} index={index} />
 				))}
