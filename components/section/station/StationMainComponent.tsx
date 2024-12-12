@@ -9,12 +9,15 @@ import ResourceRecord from './resourceRecord/ResourceRecord'
 import RepairReplacement from './repairReplacement/RepairReplacement'
 import ResourceRequest from './resourceRequest/ResourceRequest'
 import InterStationRecords from './interStationRecords/InterStationRecords'
+import Home from './home/Home'
 
 export default function StationMainComponent() {
     const [selectedComponent, setSelectedComponent] = useState<string>("");
 
     const renderComponent = () => {
       switch (selectedComponent) {
+        case "Home":
+          return <Home/>;
         case "Resource Records":
           return <ResourceRecord/>;
         case "Repair & Replacement":
@@ -24,7 +27,7 @@ export default function StationMainComponent() {
         case "Inter-Station Records":
           return <InterStationRecords />;
         default:
-          return <ResourceRecord/>;
+          return <Home />;
       }
     };
   return (

@@ -54,6 +54,11 @@ export const items = {
   ],
   stations: [
     {
+      title: "Home",
+      url: "#",
+      icon: Home,
+    },
+    {
       title: "Resource Records",
       url: "#",
       icon: Box,
@@ -108,7 +113,7 @@ export const items = {
       icon: Table2Icon,
     },
     {
-      title: "Items Distribution",
+      title: "Item Distribution",
       url: "#",
       icon: BaggageClaim,
     },

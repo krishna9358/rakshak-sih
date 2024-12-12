@@ -31,7 +31,7 @@ export default function GpsMainComponent() {
         return <BudgetPrediction />;
       case "Station Record":
         return <StationRecord />;
-      case "Resource Allocation":
+      case "Item Distribution":
         return <ResourceAllocation />;
       case "Repair & Replacement":
         return <RepairReplacement />;
