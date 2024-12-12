@@ -41,12 +41,18 @@ export default function GpsMainComponent() {
   return (
     <div>
       <SidebarProvider>
-        <AppSidebar
-          items={items.department}
-          titles={items.titles.department}
-          user={items.user}
-          onSelect={setSelectedComponent}
-        />
+      <AppSidebar
+      items={items.department}
+      titles={items.titles.department}
+      user={items.user}
+      onSelect={(component) => {
+        if (component === "Budget Predictions") {
+          window.open("http://localhost:8501", "_blank"); // Replace with your desired link
+        } else {
+          setSelectedComponent(component);
+        }
+     }}
+/>
         <SidebarInset className="bg-white">
           <header className="flex h-16 shrink-0 items-center gap-2">
             <div className="flex items-center gap-2 px-4">
