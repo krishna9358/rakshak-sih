@@ -1,3 +1,4 @@
+import { InfoCircledIcon } from "@radix-ui/react-icons";
 import { Eye } from "lucide-react";
 import React from "react";
 
@@ -8,7 +9,14 @@ function InterStationRecords() {
       <div className="flex">
         <div className="flex-1 border p-2">
           {/* Upper Left Section */}
-          <h2 className="text-lg font-semibold mb-4 text-[#563007] ">Nearest Station List</h2>
+          <div className="flex items-center">
+            <h2 className="text-lg font-semibold mb-4 text-[#563007] ">Nearest Station List </h2>
+            <div className="ml-2">
+              <span className="tooltip text-black" title="This is a exchange page, where stations can exchange their products">
+                <InfoCircledIcon className="text-black" />
+              </span>
+            </div>
+          </div>
           <table className="table">
             {/* head */}
             <thead>
@@ -27,6 +35,7 @@ function InterStationRecords() {
                   <button
                     className="btn bg-transparent border-none "
                     onClick={() => {
+                      
                       const modal = document.getElementById(
                         "my_modal_1"
                       ) as HTMLDialogElement;
