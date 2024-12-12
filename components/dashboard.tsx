@@ -52,7 +52,7 @@ export default function Dashboard() {
               <div className="space-y-2">
                 <div className="text-center text-[#7c634e]">Budget Used</div>
                 <div className="relative w-32 h-32 mx-auto">
-                  <Progress value={65} className="h-32 w-32 rounded-full bg-[#d2b99f]" indicatorColor="bg-[#7c634e]" />
+                  <Progress value={65} className="h-32 w-32 rounded-full bg-[#d2b99f]"  />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-2xl font-bold text-[#7c634e]">65%</span>
                   </div>
