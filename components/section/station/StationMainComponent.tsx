@@ -57,7 +57,7 @@ export default function StationMainComponent() {
               </Breadcrumb>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-[#563007] rounded-md ml-auto ">
-              <a href="http://localhost:3001/station" className="text-white">Hindi</a>
+              <a href="https://rakshak-sih-hindi.vercel.app/station" className="text-white">Hindi</a>
             </div>
           </header>
           <div className="gap-4 p-4 pt-0">{renderComponent()}</div>
